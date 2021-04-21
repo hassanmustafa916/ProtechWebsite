@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Adhoc]" guice-stage="DEVELOPMENT">
+  <parameter name="Wbsites" value="https://www.Protrainingtech.com"/>
+  <listeners>
+    <listener class-name="Com.Protrainingtech.Reusables.Protrainingtechlistners"/>
+  </listeners>
+  <test thread-count="5" name="functionsoffirefox(failed)">
+    <parameter name="URI" value="Firefox"/>
+    <classes>
+      <class name="Protrainingtech.scenarios.First">
+        <methods>
+          <include name="browsers"/>
+          <include name="afterClass"/>
+          <include name="f"/>
+        </methods>
+      </class> <!-- Protrainingtech.scenarios.First -->
+    </classes>
+  </test> <!-- functionsoffirefox(failed) -->
+</suite> <!-- Failed suite [Adhoc] -->

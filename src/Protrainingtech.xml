@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Adhoc" >
+<parameter name="Wbsites" value="https://www.Protrainingtech.com"></parameter>
+ <listeners>
+<listener class-name="Com.Protrainingtech.Reusables.Protrainingtechlistners"></listener>
+</listeners>
+<test name="functionsofchrome">
+<parameter name="URI" value="Chrome"></parameter>
+<classes>
+ <class name="Protrainingtech.scenarios.First"></class>
+</classes>
+</test>
+  <test name="functionsoffirefox">
+<parameter name="URI" value="Firefox"></parameter>
+<classes>
+<class name="Protrainingtech.scenarios.First"></class>
+</classes>
+</test>
+<test name="functionsofedge">
+<parameter name="URI" value="Edge"></parameter>
+<classes>
+<class name="Protrainingtech.scenarios.First"></class>
+</classes>
+</test>
+</suite>
